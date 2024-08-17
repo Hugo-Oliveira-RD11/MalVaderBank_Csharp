@@ -1,3 +1,4 @@
+namespace Models.Funcionario;
 using Models;
 
 public class Funcionario:Pessoa{

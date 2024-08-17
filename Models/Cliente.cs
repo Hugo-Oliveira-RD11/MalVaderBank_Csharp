@@ -1,4 +1,6 @@
+namespace Models.Cliente;
 using Models;
+
 public class ContaCC : ContaC
 {
    public ulong limite {get; set;}
@@ -6,6 +8,9 @@ public class ContaCC : ContaC
    public Local? local {get;set;}
    ContaCC()
    {
+       this.CPF = 0;
+       this.senha = 0;
+       this.conta = 0;
    }
 }
 public class ContaCP: ContaC
@@ -13,15 +18,9 @@ public class ContaCP: ContaC
     public Local? local {get;set;}
    ContaCP()
    {
+       this.CPF = 0;
+       this.senha = 0;
+       this.conta = 0;
    }
 }
 
-public class Funcionario:Pessoa{
-    public enum CargoFuncionario{gerente=1, subgerente=0}
-    protected uint codigo {get;set;}
-    public CargoFuncionario cargo;
-    Funcionario()
-    {
-        cargo = CargoFuncionario.subgerente;
-    }
-}

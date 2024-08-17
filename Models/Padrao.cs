@@ -18,6 +18,7 @@ public abstract class ContaC:Pessoa
 {
     protected ulong agencia{get; set;}
     protected uint senha{get; set;}
+    protected uint conta{get; set;}
 }
 
 public class Data{
